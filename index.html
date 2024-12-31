@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Div Styler</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="header">
+    <h1>Get Radius</h1>
+    <a href="https://github.com/omvijaysharma">
+      <button>Developer</button>
+    </a>
+  </div>
+  <div class="container">
+    <!-- Style Section -->
+    <div class="section">
+      <h2>Style</h2>
+      <div class="preview-div" id="previewDiv"></div>
+      <label for="unit">Unit (px or %):</label>
+      <select id="unit" onchange="updateRadius('unit')">
+        <option value="px">px</option>
+        <option value="%">%</option>
+      </select>
+      <label>All Corners</label>
+      <input type="range" id="allCorners" min="0" max="50" value="0" oninput="updateRadius('all')">
+      <label>Top-Left</label>
+      <input type="range" id="topLeft" min="0" max="50" value="0" oninput="updateRadius('topLeft')">
+      <label>Top-Right</label>
+      <input type="range" id="topRight" min="0" max="50" value="0" oninput="updateRadius('topRight')">
+      <label>Bottom-Right</label>
+      <input type="range" id="bottomRight" min="0" max="50" value="0" oninput="updateRadius('bottomRight')">
+      <label>Bottom-Left</label>
+      <input type="range" id="bottomLeft" min="0" max="50" value="0" oninput="updateRadius('bottomLeft')">
+      <label>Height (px):</label>
+      <input type="number" id="divHeight" min="50" max="300" value="100" oninput="updateSize()">
+      <label>Width (px):</label>
+      <input type="number" id="divWidth" min="50" max="300" value="100" oninput="updateSize()">
+    </div>
+
+    <!-- Code Section -->
+    <div class="section">
+      <h2>Code</h2>
+      <button id="getCodeBtn" onclick="toggleCodeSection()">Get Code</button>
+      <div id="codeSection" style="display:none;">
+        <textarea id="cssCode" readonly></textarea>
+        <button onclick="copyCode()">Copy Code</button>
+      </div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

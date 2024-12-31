@@ -1,0 +1,99 @@
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #000;
+  margin: 0;
+  padding: 20px;
+  text-align: center;
+  color: #fff;
+}
+.header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.section {
+  flex: 1 1 45%;
+  padding: 20px;
+  border-radius: 10px;
+  background-color: #222;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.preview-div {
+  width: 100px;
+  height: 100px;
+  background-color: #555;
+  border: 1px solid #fff;
+  margin: 0 auto 20px auto;
+  transition: all 0.3s ease-in-out;
+}
+
+label {
+  font-size: 14px;
+  font-weight: bold;
+  display: block;
+  margin-bottom: 5px;
+}
+
+input[type="range"], input[type="number"] {
+  width: 100%;
+  margin-bottom: 10px;
+  color: #fff;
+  text-align: center;
+  padding: 3px;
+}
+input[type="number"] {
+    width: 50%;
+}
+
+select {
+  width: 100%;
+  padding: 5px;
+  margin-bottom: 10px;
+  font-size: 14px;
+  color: #fff;
+  text-align: center;
+}
+.section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+textarea {
+  width: 80%;
+  height: 120px;
+  margin-top: 10px;
+  padding: 10px;
+  font-size: 14px;
+  border-radius: 5px;
+  resize: none;
+  background: #333;
+  color: #fff;
+}
+
+button {
+  margin-top: 10px;
+  padding: 10px 20px;
+  font-size: 14px;
+  color: #fff;
+  background-color: #333;
+  border: 1px solid #000;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+button:hover {
+  background-color: #000;
+  border-color: #fff;
+}
