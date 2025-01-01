@@ -50,10 +50,9 @@ input[type="range"], input[type="number"] {
   color: #fff;
   text-align: center;
   padding: 3px;
+  accent-color: #ff9d00;
 }
-input[type="number"] {
-    width: 50%;
-}
+input[type="number"] { width: 50%; }
 
 select {
   width: 100%;
